@@ -1,5 +1,9 @@
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
   output: 'export', // Required for static site export
+   basePath: isProd ? '/portfolio' : '',
+  assetPrefix: isProd ? '/portfolio/' : '',
   images: {
     remotePatterns: [
       {
@@ -9,7 +13,7 @@ const nextConfig = {
     ],
     unoptimized: true,
   },
-  typescript: {
+  typescript: { 
     ignoreBuildErrors: true,
   },
   eslint: {
