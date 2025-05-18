@@ -1,15 +1,5 @@
-const isProd = process.env.NODE_ENV === 'production';
-
 const nextConfig = {
-  // output: 'export',
-  basePath: isProd ? '/portfolio' : '',
-  assetPrefix: isProd ? '/portfolio/' : '',
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+  output: 'export', // Required for static site export
   images: {
     remotePatterns: [
       {
@@ -17,9 +7,13 @@ const nextConfig = {
         hostname: 'placehold.co',
       },
     ],
+    unoptimized: true,
   },
-  experimental: {
-    missingSuspenseWithCSRBailout: false,
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
   },
 };
 

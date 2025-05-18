@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Twitter } from 'lucide-react';
+import { Github, Linkedin} from 'lucide-react';
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -24,11 +24,8 @@ export default function Footer() {
             <span className="sr-only">LinkedIn</span>
           </a>
         </div>
-        <p className="text-sm text-muted-foreground">
-          &copy; {year} MotionFolio. All rights reserved.
-        </p>
         <p className="text-xs text-muted-foreground mt-1">
-          Designed and developed by Your Name.
+          Designed and developed by Nitesh Ratre
         </p>
       </div>
     </motion.footer>

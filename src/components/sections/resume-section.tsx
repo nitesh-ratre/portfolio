@@ -32,14 +32,11 @@ export default function ResumeSection({ id }: { id: string }) {
             </CardHeader>
             <CardContent className="mt-6">
               <Button asChild size="lg" className="shadow-lg w-full sm:w-auto">
-                <a href="/placeholder-resume.pdf" download="YourName_Resume.pdf">
+                <a href="/NiteshRatre-Resume.pdf" download="NiteshRatre-Resume.pdf">
                   <Download className="mr-2 h-5 w-5" />
                   Download Resume
                 </a>
               </Button>
-              <p className="text-xs text-muted-foreground mt-4">
-                (Note: This is a placeholder PDF)
-              </p>
             </CardContent>
           </Card>
         </motion.div>

@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import Image3 from '../../../public/images/image3.jpg'
 
 
 export default function AboutSection({ id }: { id: string }) {
@@ -26,7 +27,7 @@ export default function AboutSection({ id }: { id: string }) {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <Image 
-                src="https://placehold.co/600x800.png" 
+                src={Image3} 
                 alt="About Me" 
                 width={600} 
                 height={800} 
