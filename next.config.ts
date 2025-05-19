@@ -1,9 +1,9 @@
-const isProd = process.env.NODE_ENV === 'production';
+const repoName = 'portfolio'; // Replace with your GitHub repository name
 
 const nextConfig = {
   output: 'export', // Required for static site export
-   basePath: isProd ? '/portfolio' : '',
-  assetPrefix: isProd ? '/portfolio/' : '',
+  basePath: `/${repoName}`,
+  assetPrefix: `/${repoName}/`,
   images: {
     remotePatterns: [
       {

@@ -1,27 +1,16 @@
 "use client";
-
 import { motion } from 'framer-motion';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
-// Icons
-import DjangoREST from '../../../public/skills logo/DjangoREST.svg';
-import ReactLogo from '../../../public/skills logo/React.svg';
-import NodeLogo from '../../../public/skills logo/Node.js.svg';
-import ExpressLogo from '../../../public/skills logo/Express.svg';
-import MongoDBLogo from '../../../public/skills logo/MongoDB.svg';
-import FramerMotionLogo from '../../../public/skills logo/FramerMotion.svg';
-import TailwindCSSLogo from '../../../public/skills logo/Tailwind CSS.svg';
-import NextLogo from '../../../public/skills logo/Next.js.svg'; // Ensure this exists
-
 const skillsData = [
-  { name: 'Django REST Framework', icon: DjangoREST, description: "Server-side logic" },
-  { name: 'Next.js', icon: NextLogo, description: "SSR & SSG applications" },
-  { name: 'React', icon: ReactLogo, description: "Building dynamic UIs" },
-  { name: 'Node.js', icon: NodeLogo, description: "Server-side JavaScript" },
-  { name: 'Express.js', icon: ExpressLogo, description: "Backend framework for Node.js" },
-  { name: 'MongoDB', icon: MongoDBLogo, description: "NoSQL database" },
-  { name: 'Tailwind CSS', icon: TailwindCSSLogo, description: "Utility-first styling" },
-  { name: 'Framer Motion', icon: FramerMotionLogo, description: "Smooth animations" },
+  { name: 'Django REST Framework', src: '/skillslogo/DjangoREST.svg', description: "Server-side logic" },
+  { name: 'Next.js', src: '/skillslogo/Next.js.svg', description: "SSR & SSG applications" },
+  { name: 'React', src: '/skillslogo/React.svg', description: "Building dynamic UIs" },
+  { name: 'Node.js', src: '/skillslogo/Node.js.svg', description: "Server-side JavaScript" },
+  { name: 'Express.js', src: '/skillslogo/Express.svg', description: "Backend framework for Node.js" },
+  { name: 'MongoDB', src: '/skillslogo/MongoDB.svg', description: "NoSQL database" },
+  { name: 'Tailwind CSS', src: '/skillslogo/TailwindCSS.svg', description: "Utility-first styling" },
+  { name: 'Framer Motion', src: '/skillslogo/FramerMotion.svg', description: "Smooth animations" },
 ];
 
 export default function SkillsSection({ id }: { id: string }) {
@@ -69,7 +58,7 @@ export default function SkillsSection({ id }: { id: string }) {
               <motion.div key={index} variants={itemVariants}>
                 <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 h-full flex flex-col text-center items-center rounded-2xl">
                   <CardHeader className="items-center">
-                    <img src={skill.icon.src} alt={skill.name} className="w-10 h-10" />
+                    <img src={skill.src} alt={skill.name} className="w-10 h-10" />
                     <CardTitle className="mt-2 text-xl">{skill.name}</CardTitle>
                   </CardHeader>
                   <CardContent className="flex-grow">
