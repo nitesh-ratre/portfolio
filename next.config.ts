@@ -1,4 +1,4 @@
-const repoName = 'portfolio'; // Replace with your GitHub repository name
+const repoName = 'portfolio'; // Make sure this matches your GitHub repository name exactly
 
 const nextConfig = {
   output: 'export', // Required for static site export
@@ -19,6 +19,8 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  // Add trailing slashes to ensure proper asset loading
+  trailingSlash: true,
 };
 
 export default nextConfig;
