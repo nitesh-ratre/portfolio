@@ -1,8 +1,8 @@
 const repoName = 'portfolio'; // Make sure this matches your GitHub repository name exactly
 
 const nextConfig = {
-  basePath: process.env.NODE_ENV === 'production' ? `/${repoName}` : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? `/${repoName}/` : '',
+  basePath: `/${repoName}`,
+  assetPrefix: `/${repoName}/`,
   images: {
     remotePatterns: [
       {
