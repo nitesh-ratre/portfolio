@@ -32,7 +32,7 @@ export default function ResumeSection({ id }: { id: string }) {
             </CardHeader>
             <CardContent className="mt-6">
               <Button asChild size="lg" className="shadow-lg w-full sm:w-auto">
-                <a href="/NiteshRatre-Resume.pdf" download="NiteshRatre-Resume.pdf">
+                <a href="/NiteshRatre-Resume.pdf" download="NiteshRatre-Resume.pdf" target="_blank" rel="noopener noreferrer">
                   <Download className="mr-2 h-5 w-5" />
                   Download Resume
                 </a>

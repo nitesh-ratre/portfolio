@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import Image3 from '../../../public/images/image3.jpg'
 
 
 export default function AboutSection({ id }: { id: string }) {
@@ -27,7 +26,7 @@ export default function AboutSection({ id }: { id: string }) {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <Image 
-                src={Image3} 
+                src="/images/image3.jpg" 
                 alt="About Me" 
                 width={600} 
                 height={800} 
@@ -56,7 +55,7 @@ export default function AboutSection({ id }: { id: string }) {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.6 }}
                 >
-                  Currently, I’m working as a <span className='text-[#008080]'>Backend Developer Intern</span> at <span className='text-[#008080] font-bold'>Codenicely</span> (since December 2024), where I’m an active contributor to the development of a comprehensive <span className='text-[#008080]'>Warehouse Management System</span>.
+                  Currently, I'm working as a <span className='text-[#008080]'>Backend Developer Intern</span> at <span className='text-[#008080] font-bold'>Codenicely</span> (since December 2024), where I'm an active contributor to the development of a comprehensive <span className='text-[#008080]'>Warehouse Management System</span>.
                 </motion.p>
                 <motion.p 
                   className="text-lg text-foreground leading-relaxed"

@@ -7,7 +7,6 @@ import ResumeSection from '@/components/sections/resume-section';
 export default function Home() {
   return (
     <>
-      <h1>Hello</h1>
       <HomeSection id="home" />
       <AboutSection id="about" />
       <SkillsSection id="skills" />
