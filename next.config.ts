@@ -1,8 +1,4 @@
-const repoName = 'portfolio'; // Make sure this matches your GitHub repository name exactly
-
 const nextConfig = {
-  basePath: `/${repoName}`,
-  assetPrefix: `/${repoName}/`,
   images: {
     remotePatterns: [
       {
@@ -22,10 +18,7 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  // Add trailing slashes to ensure proper asset loading
   trailingSlash: true,
-  // Optimize font loading
-  optimizeFonts: true,
 };
 
 export default nextConfig;

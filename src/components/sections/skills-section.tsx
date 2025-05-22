@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const skillsData = [
-  { name: 'Django REST Framework', src: '/skillslogo/djangorest.svg', description: "Server-side logic" },
+  { name: 'Django REST Framework', src: 'skillslogo/djangorest.svg', description: "Server-side logic" },
   { name: 'Next.js', src: '/skillslogo/nextjs.svg', description: "SSR & SSG applications" },
   { name: 'React', src: '/skillslogo/react.svg', description: "Building dynamic UIs" },
   { name: 'Node.js', src: '/skillslogo/nodejs.svg', description: "Server-side JavaScript" },
