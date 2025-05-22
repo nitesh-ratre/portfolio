@@ -4,14 +4,14 @@ import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const skillsData = [
-  { name: 'Django REST Framework', src: '/skillslogo/djangorest.svg', description: "Server-side logic" },
-  { name: 'Next.js', src: '/skillslogo/nextjs.svg', description: "SSR & SSG applications" },
-  { name: 'React', src: '/skillslogo/react.svg', description: "Building dynamic UIs" },
-  { name: 'Node.js', src: '/skillslogo/nodejs.svg', description: "Server-side JavaScript" },
-  { name: 'Express.js', src: '/skillslogo/express.svg', description: "Backend framework for Node.js" },
-  { name: 'MongoDB', src: '/skillslogo/mongodb.svg', description: "NoSQL database" },
-  { name: 'Tailwind CSS', src: '/skillslogo/tailwindcss.svg', description: "Utility-first styling" },
-  { name: 'Framer Motion', src: '/skillslogo/framermotion.svg', description: "Smooth animations" },
+  { name: 'Django REST Framework', src: '/skillslogo/djangorest.jpg', description: "Server-side logic" },
+  { name: 'Next.js', src: '/skillslogo/nextjs.jpg', description: "SSR & SSG applications" },
+  { name: 'React', src: '/skillslogo/react.jpg', description: "Building dynamic UIs" },
+  { name: 'Node.js', src: '/skillslogo/nodejs.jpg', description: "Server-side JavaScript" },
+  { name: 'Express.js', src: '/skillslogo/express.jpg', description: "Backend framework for Node.js" },
+  { name: 'MongoDB', src: '/skillslogo/mongodb.jpg', description: "NoSQL database" },
+  { name: 'Tailwind CSS', src: '/skillslogo/tailwindcss.jpg', description: "Utility-first styling" },
+  { name: 'Framer Motion', src: '/skillslogo/framermotion.jpg', description: "Smooth animations" },
 ];
 
 export default function SkillsSection({ id }: { id: string }) {
