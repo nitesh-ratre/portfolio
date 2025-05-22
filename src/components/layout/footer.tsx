@@ -15,7 +15,7 @@ export default function Footer() {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="flex justify-center space-x-6 mb-4">
-          <a href="https://github.com/nits-hub/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+          <a href="https://github.com/nitesh-ratre/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
             <Github className="h-6 w-6" />
             <span className="sr-only">GitHub</span>
           </a>
