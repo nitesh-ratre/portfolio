@@ -1,9 +1,10 @@
 "use client";
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const skillsData = [
-  { name: 'Django REST Framework', src: 'skillslogo/djangorest.svg', description: "Server-side logic" },
+  { name: 'Django REST Framework', src: '/skillslogo/djangorest.svg', description: "Server-side logic" },
   { name: 'Next.js', src: '/skillslogo/nextjs.svg', description: "SSR & SSG applications" },
   { name: 'React', src: '/skillslogo/react.svg', description: "Building dynamic UIs" },
   { name: 'Node.js', src: '/skillslogo/nodejs.svg', description: "Server-side JavaScript" },
@@ -57,9 +58,15 @@ export default function SkillsSection({ id }: { id: string }) {
             {skillsData.map((skill, index) => (
               <motion.div key={index} variants={itemVariants}>
                 <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 h-full flex flex-col text-center items-center rounded-2xl">
-                  <CardHeader className="items-center">
-                    <img src={skill.src} alt={skill.name} className="w-10 h-10" />
-                    <CardTitle className="mt-2 text-xl">{skill.name}</CardTitle>
+                  <CardHeader className="items-center flex flex-col">
+                    <Image
+                      src={skill.src}
+                      alt={skill.name}
+                      width={40}
+                      height={40}
+                      className="mb-2"
+                    />
+                    <CardTitle className="text-xl">{skill.name}</CardTitle>
                   </CardHeader>
                   <CardContent className="flex-grow">
                     <p className="text-muted-foreground text-sm">{skill.description}</p>

@@ -11,7 +11,7 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "preview": "serve out",
+    "preview": "serve out"
   },
   "dependencies": {
     "@genkit-ai/googleai": "^1.8.0",
